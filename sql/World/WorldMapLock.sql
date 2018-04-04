@@ -12,7 +12,7 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
 -- Dumping structure for table acore_world.maplock
-CREATE TABLE IF NOT EXISTS `maplock` (
+CREATE TABLE IF NOT EXISTS `MapLock` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `mapId` int(11) DEFAULT NULL,
   `zoneID` int(11) DEFAULT NULL,
