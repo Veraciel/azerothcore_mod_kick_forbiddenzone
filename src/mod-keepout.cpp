@@ -5,6 +5,7 @@
 #include "ScriptMgr.h"
 #include "Define.h"
 #include "GossipDef.h"
+#include "Chat.h"
 
 uint32 maxwarnings;
 bool KeepoutEnabled;
@@ -26,11 +27,13 @@ public:
     uint32 mapId;
     std::string maparea;
 
-    void OnLogin(Player* player)
+    void OnLogin(Player* player) 
+{
+            if (sConfigMgr->GetBoolDefault("Announcer.Enable", true))
     {
         ChatHandler(player->GetSession()).PSendSysMessage("This server is running the |cff4CFF00Keepout |rmodule.");
     }
-
+}
     void OnMapChanged(Player* player)
     {
         if (KeepoutEnabled)
