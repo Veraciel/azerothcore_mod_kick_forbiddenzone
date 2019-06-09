@@ -5,6 +5,7 @@
 #include "ScriptMgr.h"
 #include "Define.h"
 #include "GossipDef.h"
+#include "Chat.h"
 
 uint32 maxwarnings;
 bool KeepoutEnabled;
