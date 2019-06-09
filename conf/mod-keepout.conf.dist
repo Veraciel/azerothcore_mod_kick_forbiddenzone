@@ -1,6 +1,13 @@
 [worldserver]
 
 #
+#	KeepOutAnnouncerEnabled
+#		Enable/Disable Announcer
+#		Default:	Enabled = 1
+#		
+Announcer.Enable = 1
+
+#
 #	KeepOutEnabled
 #		Enable/Disable this Module
 #		Default:	Enabled = 1

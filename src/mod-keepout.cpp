@@ -26,11 +26,13 @@ public:
     uint32 mapId;
     std::string maparea;
 
-    void OnLogin(Player* player)
+    void OnLogin(Player* player) 
+{
+            if (sConfigMgr->GetBoolDefault("Announcer.Enable", true))
     {
         ChatHandler(player->GetSession()).PSendSysMessage("This server is running the |cff4CFF00Keepout |rmodule.");
     }
-
+}
     void OnMapChanged(Player* player)
     {
         if (KeepoutEnabled)
